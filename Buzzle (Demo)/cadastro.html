@@ -3,24 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Cadastro - Buzzle</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
     <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
-    <main>
-        <input type="checkbox" class="inputprof">
-        <input type="checkbox" class="inputalun">
-        <section class="secmain">
-            <div class="divprof">
-                ilustração daora de professor
-                <div class="cadprof">
-                    asdfaefdsfweasd
-                </div>
+    <header>
+        <section class="secheader">
+            <div class="headerlogo">
+                <img src="imagens/logotipo2.png" class="logo">
             </div>
-            <div class="divalun">
-                ilustraçao daora de aluno
+            <div class="navegacao">
+                <ul>
+                    <li>Naveção1</li>
+                    <li>Naveção2</li>
+                    <li>Naveção3</li>
+                    <li>Naveção4</li>
+                    <li>Naveção5</li>
+                </ul>
             </div>
         </section>
+    </header>
+    <main>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">welcome back!</h2>
+                <p class="description description-primary">To keep connected with us</p>
+                <p class="description description-primary">please login with your personal info</p>
+                <button id="signin" class="btn btn-primary">sign in</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">create account</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>        
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">or use your email for registration:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">sign up</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">hello, friend!</h2>
+                <p class="description description-primary">Enter your personal details</p>
+                <p class="description description-primary">and start journey with us</p>
+                <button id="signup" class="btn btn-primary">sign up</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">sign in to developer</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">or use your email account:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">forgot your password?</a>
+                    <button class="btn btn-second">sign in</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="app.js"></script>
     </main>
+    <footer>
+        <section class="secfooter">
+            <div class="contatos">
+                <div>
+                    <p class="conttitle">Contatos</p>
+                    <div>
+                        <img src="imagens/emailicon.png" class="email">
+                        <p class="emailtxt">caiolindo@gmail.com</p>
+                    </div>
+                    <div>
+                        <img src="imagens/instaicon.png" class="insta">
+                        <p class="instatxt">@caiolindo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="governo">
+                <img src="imagens/ccm.png" class="ccm">
+                <img src="imagens/governo.png" class="parana">
+            </div>
+            <div class="equipe">
+                <img src="imagens/logoequipe.png" class="logoequipe">
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
