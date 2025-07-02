@@ -1,3 +1,10 @@
+:root {
+    --amarelo: #ffda33;
+    --branco: #f2f2f2;
+    --marrom: #613a18;
+    --azul-escuro: #120c30;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +15,7 @@ body {
     font-family: 'Arial', sans-serif;
     height: 100%;
     background-image: url("imagens/colmeia2.png");
-    color: #333;
+    color: var(--marrom);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,25 +23,18 @@ body {
 }
 
 .container {
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px;
-    width: 500px;
+    background: var(--branco);
+    padding: 40px;
+    border-radius: 20px;
+    border: solid 4px var(--amarelo);;
+    width: 90%;
+    max-width: 500px;
 }
 
-header {
-    text-align: center;
+h1 {
+    color: var(--marrom);
     margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #ffda33; /* Amarelo-ouro */
-}
-
-header p {
-    color: #555;
-    font-size: 1rem;
+    text-align: center;
 }
 
 .form-pregunta {
@@ -43,39 +43,43 @@ header p {
 }
 
 .form-pregunta label {
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: #333;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .form-pregunta input,
 .form-pregunta select {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 2px solid var(--marrom);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
 }
 
 .form-pregunta input:focus,
 .form-pregunta select:focus {
     outline: none;
-    border-color: #ffda33;
+    border-color: var(--amarelo);
 }
 
 .btn-cadastrar {
-    background-color: #ffda33;
-    color: white;
-    padding: 15px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: var(--amarelo);
+    color: var(--azul-escuro);
     border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 .btn-cadastrar:hover {
-    background-color: #ff8f00;
+    background: var(--amarelo);
 }
 
 footer {
@@ -84,7 +88,7 @@ footer {
 }
 
 footer a {
-    color: #ffda33;
+    color: var(--marrom);
     text-decoration: none;
 }
 

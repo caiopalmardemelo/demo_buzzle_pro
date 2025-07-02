@@ -186,3 +186,10 @@ function moveSlide(step) {
     const seccarrossel = document.querySelector('.seccarrossel');
     seccarrossel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
+
+function fezes(){
+    let headingID = document.getElementById("logo");
+            headingID.classList.remove("imagens/colmeia2.png");
+            headingID.classList.add("imagens/colemiadark.png");
+}
+
