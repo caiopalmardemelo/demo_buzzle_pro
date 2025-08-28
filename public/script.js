@@ -18,5 +18,9 @@ function moveSlide(step) {
 }
 
 function fezes(){
-    document.main.style.backgroundImage = 'url(imagens/colmeiadark)';
+    document.body.style.backgroundImage = 'url(imagens/colmeiadark.png)';
+    document.documentElement.style.setProperty('--primary-color', '#0a0a0a');
+    document.documentElement.style.setProperty('--secondary-color', '#181818');
+    document.documentElement.style.setProperty('--tertiary-color', '#3a1c12');
+    document.documentElement.style.setProperty('--quaternary-color', '#fdfdfd');
 }
